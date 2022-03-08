@@ -9,11 +9,15 @@ export default Vue.extend({
   props: {
     text: { type: String, required: true },
   },
+  // inject: {
+  //   buttonValue: 'buttonValue',
+  // },
   data() {
     return {
       // text: 'default label text',
     };
   },
+
   methods: {
     changeText(val: string) {
       // this.text = val;

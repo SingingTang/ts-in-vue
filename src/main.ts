@@ -1,4 +1,4 @@
-import Vue from './types/vue-global.d';
+import Vue from 'vue';
 import App from './App.vue';
 import './registerServiceWorker';
 import router from './router';
@@ -7,6 +7,7 @@ import store from './store';
 Vue.config.productionTip = false;
 Vue.prototype.$static = {};
 Vue.prototype.$isH5 = false;
+// Vue.prototype.$loading = false;
 new Vue({
   router,
   store,

@@ -1,0 +1,45 @@
+{
+  "plugins": [
+    "stylelint-less"
+  ],
+  "extends": [
+    "stylelint-config-recommended-less"
+  ],
+  "customSyntax": "postcss-less",
+  "rules": {
+    "at-rule-no-unknown": true,
+    "color-no-invalid-hex":true,
+    "less/color-no-invalid-hex":true,
+    "declaration-block-no-duplicate-custom-properties": true,
+    "selector-class-pattern": null,
+    "declaration-bang-space-after": "never",
+    "declaration-colon-space-after": "always-single-line",
+    "declaration-colon-space-before": "never",
+    "declaration-block-semicolon-newline-after": "always",
+    "declaration-block-semicolon-space-after": "never-single-line",
+    "declaration-block-trailing-semicolon": "always",
+    "color-hex-case": "upper",
+    "declaration-block-single-line-max-declarations": 1,
+    "indentation": "tab",
+    "declaration-block-no-duplicate-properties": true,
+
+    
+    "block-closing-brace-newline-after": "always",
+    "block-closing-brace-newline-before": "always-multi-line",
+    "block-closing-brace-space-before": "always-single-line",
+    "block-opening-brace-space-before": "always",
+    "block-opening-brace-space-after": "always-single-line",
+    "block-opening-brace-newline-after": "always-multi-line",
+
+    "selector-list-comma-newline-before": "never-multi-line",
+    "selector-list-comma-newline-after": "always-multi-line",
+    "selector-list-comma-space-after": "always-single-line",
+    "selector-list-comma-space-before": "never"
+  },
+  "overrides": [
+    {
+      "files": ["*.vue", "**/*.vue"],
+      "customSyntax": "postcss-html"
+    }
+  ]
+}

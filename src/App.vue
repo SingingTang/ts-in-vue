@@ -1,32 +1,30 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="page-skeleton">
+        fdas
+        <div class="page-warpper">
+          <div class="page-header">
+            <div class="page-header-title">
+              <p class="page-header-title__text">标题文字</p>
+            </div>
+          </div>
+          <div class="page-content">
+
+          </div>
+        </div>
     </div>
-    <router-view/>
   </div>
 </template>
+<script lang="ts">
+import Vue from 'vue';
 
-<style lang="scss">
+export default Vue.extend({
+
+});
+</script>
+<style lang="less" scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+	width: 100%;
+	color: #FFF;
 }
 </style>

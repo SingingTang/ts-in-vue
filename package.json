@@ -5,8 +5,15 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "stylelint": "stylelint --fix **/*.{vue,less,css} "
+    "lint": "vue-cli-service lint && stylelint --fix **/*.{vue,less,css}",
+    "prepare": "husky install && rm .husky/pre-commit; npx husky add .husky/pre-commit 'npx lint-staged'"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,vue}": [ 
+      "eslint --cache --fix --ext .js,.jsx,.ts,.tsx,.vue",
+      "vue-cli-service build"
+    ],
+    "*.{js,jsx,ts,tsx,vue,less,css}": "stylelint --cache --fix "
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -36,8 +43,10 @@
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^6.2.2",
+    "husky": "^8.0.1",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
+    "lint-staged": "^12.4.1",
     "postcss-html": "^1.4.1",
     "postcss-less": "^6.0.0",
     "sass": "^1.26.5",

@@ -13,7 +13,7 @@
       "eslint --cache --fix --ext .js,.jsx,.ts,.tsx,.vue",
       "vue-cli-service build"
     ],
-    "*.{js,jsx,ts,tsx,vue,less,css}": "stylelint --cache --fix "
+    "*.{vue,less,css}": "stylelint --cache --fix "
   },
   "dependencies": {
     "core-js": "^3.6.5",

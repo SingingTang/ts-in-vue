@@ -7,7 +7,7 @@ module.exports = {
     'plugin:vue/essential',
     '@vue/airbnb',
     '@vue/typescript/recommended',
-    "@vue/eslint-config-typescript"
+    '@vue/eslint-config-typescript',
   ],
   parserOptions: {
     ecmaVersion: 2020,
@@ -15,8 +15,8 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    "class-methods-use-this": "off",
-    "typescript-eslint/ban-types": "off",
-    "no-tabs": "off"
+    'class-methods-use-this': 'off',
+    'typescript-eslint/ban-types': 'off',
+    'no-tabs': 'off',
   },
 };

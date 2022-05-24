@@ -1,0 +1,8 @@
+{
+    "vetur.validation.templateProps": true,
+    "vetur.experimental.templateInterpolationService": true,
+    "vetur.validation.interpolation": true,
+    "vetur.validation.template": true,
+    "vetur.validation.script": true,
+    "stylelint.validate": ["css", "scss", "less", "postcss", "vue"],
+}
